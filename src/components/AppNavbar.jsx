@@ -52,16 +52,69 @@ const AppNavbar = () => {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3 gap-4 align-items-lg-center">
-                            <Nav.Link as={Link} to="/" className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}>Home</Nav.Link>
-                            <Nav.Link as={Link} to="/about" className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}>About Us</Nav.Link>
-                            <Nav.Link as={Link} to="/services" className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}>Products & Services</Nav.Link>
-                            <Nav.Link as={Link} to="/infrastructure" className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}>Capabilities</Nav.Link>
-                            <Nav.Link as={Link} to="/quality" className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}>Quality</Nav.Link>
+                            {/* Navigation Helper Function for smooth scroll on same page */}
+                            {(() => {
+                                const handleNavItemClick = (path) => {
+                                    if (window.location.pathname === path) {
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    }
+                                };
+
+                                return (
+                                    <>
+                                        <Nav.Link
+                                            as={Link}
+                                            to="/"
+                                            className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}
+                                            onClick={() => handleNavItemClick('/')}
+                                        >
+                                            Home
+                                        </Nav.Link>
+                                        <Nav.Link
+                                            as={Link}
+                                            to="/about"
+                                            className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}
+                                            onClick={() => handleNavItemClick('/about')}
+                                        >
+                                            About Us
+                                        </Nav.Link>
+                                        <Nav.Link
+                                            as={Link}
+                                            to="/services"
+                                            className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}
+                                            onClick={() => handleNavItemClick('/services')}
+                                        >
+                                            Products & Services
+                                        </Nav.Link>
+                                        <Nav.Link
+                                            as={Link}
+                                            to="/infrastructure"
+                                            className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}
+                                            onClick={() => handleNavItemClick('/infrastructure')}
+                                        >
+                                            Capabilities
+                                        </Nav.Link>
+                                        <Nav.Link
+                                            as={Link}
+                                            to="/quality"
+                                            className={`fw-bold ${scrolled ? 'text-secondary' : 'text-lg-white text-secondary'} hover-scale`}
+                                            onClick={() => handleNavItemClick('/quality')}
+                                        >
+                                            Quality
+                                        </Nav.Link>
+                                    </>
+                                );
+                            })()}
                             <Button
                                 as={Link}
                                 to="/contact"
                                 variant={scrolled ? "outline-primary" : "primary"}
                                 className={`rounded-pill px-4 fw-bold ${scrolled ? '' : 'd-none d-lg-block'}`}
+                                onClick={() => {
+                                    if (window.location.pathname === '/contact') {
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    }
+                                }}
                             >
                                 Contact Us
                             </Button>

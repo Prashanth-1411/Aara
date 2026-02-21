@@ -7,10 +7,12 @@ import Services from './pages/Services';
 import Infrastructure from './pages/Infrastructure';
 import Quality from './pages/Quality';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
