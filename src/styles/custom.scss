@@ -1,0 +1,86 @@
+/* Custom SCSS for Aara Engineering */
+
+// Brand Colors
+$primary: #0B3D91; // Royal Blue
+$secondary: #1A1F2C; // Slate
+$accent: #E67E22; // Gold
+$light: #F4F6F8;
+$dark: #121212;
+
+// Font Configuration
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: 'Outfit', sans-serif;
+
+// Enable Options
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-rounded: true;
+
+// Override Bootstrap Defaults
+$body-bg: #ffffff;
+$body-color: $secondary;
+
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom Utilities
+.bg-primary-blue {
+    background-color: $primary !important;
+}
+
+.text-primary-blue {
+    color: $primary !important;
+}
+
+.bg-accent-gold {
+    background-color: $accent !important;
+}
+
+.text-accent-gold {
+    color: $accent !important;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    font-weight: 700;
+}
+
+// Button Overrides
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+    }
+}
+
+// Responsive Text Colors
+.text-branding {
+    color: $primary !important; // Blue on mobile
+
+    @include media-breakpoint-up(lg) {
+        color: white !important; // White on desktop (blue bg)
+    }
+}
