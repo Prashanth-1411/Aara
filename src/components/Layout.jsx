@@ -2,6 +2,7 @@ import React from 'react';
 import AppNavbar from './AppNavbar';
 import Footer from './Footer';
 import WaveBackground from './WaveBackground';
+import WhatsAppButton from './WhatsAppButton';
 
 const Layout = ({ children }) => {
     return (
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
                 {children}
             </main>
             <Footer />
+            <WhatsAppButton />
         </div>
     );
 };

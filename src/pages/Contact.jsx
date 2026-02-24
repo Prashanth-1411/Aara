@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert, Spinner } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaUserTie, FaMapMarkerAlt, FaEnvelope, FaPhone, FaCheckCircle } from 'react-icons/fa';
+import { FaUserTie, FaMapMarkerAlt, FaEnvelope, FaPhone, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -170,6 +170,24 @@ const Contact = () => {
                                         <div>
                                             <h3 className="h5 fw-bold text-secondary mb-1">Call Us</h3>
                                             <p className="text-dark lead mb-0">+91-9710 111 579</p>
+                                        </div>
+                                    </div>
+
+                                    {/* WhatsApp */}
+                                    <div className="d-flex align-items-center gap-4 group">
+                                        <div className="bg-success text-white rounded-circle p-3 d-flex align-items-center justify-content-center shadow-sm" style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}>
+                                            <FaWhatsapp />
+                                        </div>
+                                        <div>
+                                            <h3 className="h5 fw-bold text-secondary mb-1">WhatsApp</h3>
+                                            <a
+                                                href="https://wa.me/919710111579"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-success lead mb-0 text-decoration-none fw-bold"
+                                            >
+                                                Chat with us
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
