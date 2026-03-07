@@ -43,10 +43,10 @@ const Footer = () => {
                     <Col md={3} className="text-secondary">
                         <h6 className="fw-bold text-primary-blue mb-3">Contact Info</h6>
                         <div className="small">
-                            <p className="mb-2"><i className="fas fa-user me-2 text-primary-blue"></i> JAYA KUMAR C</p>
-                            <p className="mb-2"><i className="fas fa-map-marker-alt me-2 text-primary-blue"></i> No.1/36 Brahmin Street, Korattur, Chennai - 600 080</p>
-                            <p className="mb-2"><i className="fas fa-phone me-2 text-primary-blue"></i> +91-9710 111 579</p>
-                            <p className="mb-2"><i className="fas fa-envelope me-2 text-primary-blue"></i> aaraengineering26@gmail.com</p>
+                            <div className="d-flex mb-2"><i className="fas fa-user me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>JAYA KUMAR C</span></div>
+                            <div className="d-flex mb-2"><i className="fas fa-map-marker-alt me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>No.1/36 Brahmin Street, Korattur, Chennai - 600 080</span></div>
+                            <div className="d-flex mb-2"><i className="fas fa-phone me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>+91-9710 111 579</span></div>
+                            <div className="d-flex mb-2"><i className="fas fa-envelope me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>aaraengineering26@gmail.com</span></div>
                         </div>
                     </Col>
                 </Row>

@@ -6,12 +6,24 @@ import { FaCog, FaCogs } from 'react-icons/fa';
 const Infrastructure = () => {
     return (
         <div className="pt-5 mt-4">
-            <section className="position-relative py-5 text-center"
-                style={{ minHeight: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {/* Hero Section */}
+            <section
+                className="position-relative py-5 bg-primary text-white text-center overflow-hidden"
+                style={{
+                    backgroundImage: "url('/assets/images/Heavy Fab.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    minHeight: '40vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}
+            >
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-75" style={{ mixBlendMode: 'multiply' }}></div>
                 <Container className="position-relative z-1 py-5">
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                        <h1 className="display-3 fw-bold font-display mb-3 text-secondary">Capabilities</h1>
-                        <p className="lead opacity-90 text-muted">Built for Capacity, Designed for Precision</p>
+                    <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                        <h1 className="display-3 fw-bold font-display mb-3">Capabilities</h1>
+                        <p className="lead opacity-90 fw-light">Built for Capacity, Designed for Precision</p>
                     </motion.div>
                 </Container>
             </section>

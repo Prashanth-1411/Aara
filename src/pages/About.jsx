@@ -7,12 +7,21 @@ const About = () => {
     return (
         <div className="pt-5 mt-4">
             {/* Page Header */}
-            <section className="position-relative py-5 text-white overflow-hidden text-center"
-                style={{ minHeight: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <section className="position-relative py-5 bg-primary text-white text-center overflow-hidden"
+                style={{
+                    backgroundImage: "url('/assets/images/MRO.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    minHeight: '40vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}>
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-75" style={{ mixBlendMode: 'multiply' }}></div>
                 <Container className="position-relative z-1 py-5">
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                        <h1 className="display-3 fw-bold font-display mb-3 text-secondary">About Us</h1>
-                        <p className="lead opacity-90 text-muted">Driving Innovation in Precision Engineering</p>
+                    <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                        <h1 className="display-3 fw-bold font-display mb-3">About Us</h1>
+                        <p className="lead opacity-90 fw-light">Driving Innovation in Precision Engineering</p>
                     </motion.div>
                 </Container>
             </section>

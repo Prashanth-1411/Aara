@@ -127,19 +127,19 @@ const Contact = () => {
                                 <h2 className="display-6 fw-bold text-secondary mb-5">Reach Us</h2>
                                 <div className="d-flex flex-column gap-4">
                                     {/* Contact Person */}
-                                    <div className="d-flex align-items-start gap-4 group">
+                                    <div className="d-flex align-items-center gap-4 group">
                                         <div className="bg-light text-primary rounded-circle p-3 d-flex align-items-center justify-content-center shadow-sm" style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}>
                                             <FaUserTie />
                                         </div>
                                         <div>
                                             <h3 className="h5 fw-bold text-secondary mb-1">Contact Person</h3>
                                             <p className="h5 fw-bold text-dark mb-0">JAYA KUMAR C</p>
-                                            <p className="text-muted small">Marketing Head</p>
+                                            <p className="text-muted small mb-0">Marketing Head</p>
                                         </div>
                                     </div>
 
                                     {/* Visit Us */}
-                                    <div className="d-flex align-items-start gap-4 group">
+                                    <div className="d-flex align-items-center gap-4 group">
                                         <div className="bg-light text-primary rounded-circle p-3 d-flex align-items-center justify-content-center shadow-sm" style={{ width: '60px', height: '60px', fontSize: '1.5rem' }}>
                                             <FaMapMarkerAlt />
                                         </div>

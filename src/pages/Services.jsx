@@ -37,14 +37,25 @@ const Services = () => {
 
     return (
         <div className="pt-5 mt-4">
+            {/* Hero Section */}
             <section
-                className="position-relative py-5 bg-secondary text-white overflow-hidden text-center"
-                style={{ backgroundImage: "url('/assets/images/CNc.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+                className="position-relative py-5 bg-primary text-white text-center overflow-hidden"
+                style={{
+                    backgroundImage: "url('/assets/images/CNc.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    minHeight: '40vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}
             >
-                <div className="position-absolute top-0 start-0 w-100 h-100 bg-secondary opacity-90"></div>
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-75" style={{ mixBlendMode: 'multiply' }}></div>
                 <Container className="position-relative z-1 py-5">
-                    <h1 className="display-3 fw-bold font-display mb-3">Products & Services</h1>
-                    <p className="lead opacity-90">Comprehensive Engineering Solutions</p>
+                    <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                        <h1 className="display-3 fw-bold font-display mb-3">Products & Services</h1>
+                        <p className="lead opacity-90 fw-light">Comprehensive Engineering Solutions</p>
+                    </motion.div>
                 </Container>
             </section>
 
