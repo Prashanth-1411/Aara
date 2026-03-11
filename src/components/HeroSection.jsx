@@ -96,7 +96,7 @@ const HeroSection = () => {
                                     <div className="bg-primary-blue text-white p-3 rounded-circle shadow-sm">
                                         <FaEnvelope size={24} />
                                     </div>
-                                    <span className="fw-bold h5 mb-0">aaraengineering26@gmail.com</span>
+                                    <span className="fw-bold h5 mb-0">Marketing@aaraengineerings.com</span>
                                 </motion.div>
 
                                 <motion.div whileHover={{ x: 10 }} className="d-flex align-items-start gap-4 group">
