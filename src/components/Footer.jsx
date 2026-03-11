@@ -46,7 +46,7 @@ const Footer = () => {
                             <div className="d-flex mb-2"><i className="fas fa-user me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>JAYA KUMAR C</span></div>
                             <div className="d-flex mb-2"><i className="fas fa-map-marker-alt me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>No.1/36 Brahmin Street, Korattur, Chennai - 600 080</span></div>
                             <div className="d-flex mb-2"><i className="fas fa-phone me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>+91-9710 111 579</span></div>
-                            <div className="d-flex mb-2"><i className="fas fa-envelope me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>aaraengineering26@gmail.com</span></div>
+                            <div className="d-flex mb-2"><i className="fas fa-envelope me-3 mt-1 text-primary-blue" style={{ width: '16px' }}></i> <span>Marketing@aaraengineerings.com</span></div>
                         </div>
                     </Col>
                 </Row>
